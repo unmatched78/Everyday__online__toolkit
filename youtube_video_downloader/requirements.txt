@@ -1,0 +1,5 @@
+ffmpeg  
+yt-dlp
+ffmpeg-python 
+pydub
+requests
