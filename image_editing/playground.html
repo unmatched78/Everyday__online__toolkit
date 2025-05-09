@@ -1,0 +1,17 @@
+<img id="source" src="path/to/image.jpg" crossOrigin="anonymous" />
+<button onclick="doCrop()">Crop</button>
+<canvas id="output"></canvas>
+
+<script type="module">
+  import { cropImage } from './imageEditor.js';
+
+  async function doCrop() {
+    const img = document.getElementById('source');
+    const dataUrl = await cropImage(img, { left: 50, top: 50, width: 200, height: 200 });
+    const out = document.getElementById('output');
+    const ctx = out.getContext('2d');
+    const resultImg = new Image();
+    resultImg.src = dataUrl;
+    resultImg.onload = () => { ctx.drawImage(resultImg, 0, 0); };
+  }
+</script>

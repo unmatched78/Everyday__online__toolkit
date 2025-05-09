@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cropperjs": "^2.0.0",
+    "fabric": "^6.6.4"
+  }
+}

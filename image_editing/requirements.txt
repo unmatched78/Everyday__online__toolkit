@@ -1,0 +1,7 @@
+npm install cropperjs
+npm install fabric
+npm install camanjs
+npm install @pqina/pintura
+npm install darkroomjs
+npm install imagerjs
+npm install palleonjs
